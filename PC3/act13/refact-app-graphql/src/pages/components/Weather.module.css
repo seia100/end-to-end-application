@@ -1,0 +1,23 @@
+/* Weather.module.css */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #00796b;
+}
+
+.counter {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #004d40;
+    cursor: pointer;
+}
+
+.counter:hover {
+    color: #00251a;
+}
