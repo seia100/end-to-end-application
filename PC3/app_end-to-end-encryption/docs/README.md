@@ -415,16 +415,16 @@ Conjunto de pruebas: Auth API
 
 Prueba: Debería registrar un usuario correctamente
 
-    *   **Objetivo:** Verificar que la ruta `/api/auth/register` registre un nuevo usuario correctamente.
-    *   **Estrategia:**
-        *   Se envía una solicitud POST a `/api/auth/register` con un nombre de usuario y contraseña válidos.
-        *   Se verifica que la respuesta tenga un código de estado 201 (Created).
-        *   Se verifica que la respuesta contenga la propiedad `user` con el nombre de usuario esperado.
+  *   **Objetivo:** Verificar que la ruta `/api/auth/register` registre un nuevo usuario correctamente.
+  *   **Estrategia:**
+      *   Se envía una solicitud POST a `/api/auth/register` con un nombre de usuario y contraseña válidos.
+      *   Se verifica que la respuesta tenga un código de estado 201 (Created).
+      *   Se verifica que la respuesta contenga la propiedad `user` con el nombre de usuario esperado.
 
 Prueba: Debería rechazar el registro si el usuario ya existe
 
-    *   **Objetivo:** Verificar que la ruta `/api/auth/register` maneje correctamente el caso de un usuario duplicado.
-    *   **Estrategia:**
-        *   Se envía una solicitud POST a `/api/auth/register` con un nombre de usuario que ya existe en la base de datos (el mismo que se usó en la prueba anterior).
-        *   Se verifica que la respuesta tenga un código de estado 409 (Conflict), indicando que el recurso ya existe.
+  *   **Objetivo:** Verificar que la ruta `/api/auth/register` maneje correctamente el caso de un usuario duplicado.
+  *   **Estrategia:**
+      *   Se envía una solicitud POST a `/api/auth/register` con un nombre de usuario que ya existe en la base de datos (el mismo que se usó en la prueba anterior).
+      *   Se verifica que la respuesta tenga un código de estado 409 (Conflict), indicando que el recurso ya existe.
 
